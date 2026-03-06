@@ -65,33 +65,6 @@ a{
 }
 
 /* ===============================
-Header
-=============================== */
-
-.site-header{
-  background:#fff;
-  border-bottom:1px solid var(--border);
-}
-
-.site-header__inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:center;
-  padding:10px 0;
-}
-
-.site-logo{
-  font-weight:900;
-  letter-spacing:.4px;
-}
-
-.site-meta{
-  font-size:12px;
-  color:var(--text-muted);
-  text-align:right;
-}
-
-/* ===============================
 Page Intro (旧 hero)
 =============================== */
 
@@ -498,57 +471,4 @@ FAQ
 
 .faq-answer{
   padding-top:10px;
-}
-
-/* ===============================
-Footer
-=============================== */
-
-.site-footer{
-  background:#0b1b3a;
-  color:#e8eefc;
-  margin-top:40px;
-}
-
-.site-footer__grid{
-  display:grid;
-  grid-template-columns:1.2fr 1fr 1fr;
-  gap:20px;
-  padding:32px 0;
-}
-
-@media(max-width:900px){
-  .site-footer__grid{
-    grid-template-columns:1fr;
-  }
-}
-
-.site-footer__title{
-  font-size:18px;
-  font-weight:900;
-}
-
-.site-footer__heading{
-  font-weight:900;
-  margin-bottom:6px;
-}
-
-.site-footer__links{
-  list-style:none;
-  padding:0;
-  margin:0;
-}
-
-.site-footer__links li{
-  margin-bottom:6px;
-}
-
-.site-footer__links a:hover{
-  text-decoration:underline;
-}
-
-.site-footer__bottom{
-  border-top:1px solid rgba(232,238,252,.15);
-  padding:12px 0 20px;
-  font-size:13px;
 }

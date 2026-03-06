@@ -1,0 +1,102 @@
+/* ===============================
+Footer Base
+=============================== */
+
+.site-footer{
+  background:#0b1b3a;
+  color:#e8eefc;
+  margin-top:60px;
+}
+
+.site-footer a{
+  color:#d9e4ff;
+  transition:.15s;
+}
+
+.site-footer a:hover{
+  color:#ffffff;
+  text-decoration:underline;
+}
+
+/* ===============================
+Footer Grid
+=============================== */
+
+.site-footer__grid{
+  display:grid;
+  grid-template-columns:1.2fr 1fr 1fr;
+  gap:28px;
+  padding:40px 0;
+}
+
+/* ===============================
+Footer Brand
+=============================== */
+
+.site-footer__title{
+  font-size:20px;
+  font-weight:900;
+  margin-bottom:10px;
+}
+
+.site-footer__description{
+  font-size:14px;
+  color:#c9d6f4;
+  line-height:1.7;
+}
+
+/* ===============================
+Footer Navigation
+=============================== */
+
+.site-footer__heading{
+  font-size:14px;
+  font-weight:800;
+  margin-bottom:10px;
+  color:#ffffff;
+}
+
+.site-footer__links{
+  list-style:none;
+  padding:0;
+  margin:0;
+}
+
+.site-footer__links li{
+  margin-bottom:8px;
+}
+
+.site-footer__links a{
+  font-size:14px;
+  color:#d6e2ff;
+}
+
+/* ===============================
+Footer Bottom
+=============================== */
+
+.site-footer__bottom{
+  border-top:1px solid rgba(232,238,252,.15);
+  padding:16px 0;
+  font-size:13px;
+  text-align:center;
+  color:#c9d6f4;
+}
+
+/* ===============================
+Mobile
+=============================== */
+
+@media(max-width:900px){
+
+  .site-footer__grid{
+    grid-template-columns:1fr;
+    gap:22px;
+    padding:32px 0;
+  }
+
+  .site-footer__title{
+    font-size:18px;
+  }
+
+}

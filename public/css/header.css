@@ -1,0 +1,103 @@
+/* ===============================
+Header Layout
+=============================== */
+
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  background:#ffffff;
+  border-bottom:1px solid var(--border);
+  backdrop-filter:saturate(180%) blur(6px);
+}
+
+.site-header__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:14px 0;
+}
+
+/* ===============================
+Logo
+=============================== */
+
+.site-logo{
+  font-size:20px;
+  font-weight:900;
+  letter-spacing:.5px;
+  color:var(--primary);
+}
+
+/* ===============================
+Navigation
+=============================== */
+
+.site-nav{
+  display:flex;
+  gap:20px;
+  align-items:center;
+}
+
+.site-nav a{
+  font-size:14px;
+  font-weight:600;
+  color:var(--text);
+  transition:.15s;
+}
+
+.site-nav a:hover{
+  color:var(--primary);
+}
+
+/* ===============================
+Header Meta
+=============================== */
+
+.site-meta{
+  font-size:12px;
+  color:var(--text-muted);
+  text-align:right;
+}
+
+/* ===============================
+CTA Button
+=============================== */
+
+.header-cta{
+  background:var(--primary);
+  color:#fff;
+  padding:8px 14px;
+  border-radius:8px;
+  font-size:13px;
+  font-weight:700;
+  transition:.15s;
+}
+
+.header-cta:hover{
+  background:var(--primary-dark);
+}
+
+/* ===============================
+Mobile
+=============================== */
+
+@media(max-width:900px){
+
+  .site-header__inner{
+    flex-wrap:wrap;
+    gap:10px;
+  }
+
+  .site-nav{
+    width:100%;
+    justify-content:center;
+    gap:14px;
+    font-size:13px;
+  }
+
+  .site-meta{
+    display:none;
+  }
+
+}
