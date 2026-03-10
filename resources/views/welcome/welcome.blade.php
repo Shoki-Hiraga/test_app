@@ -13,22 +13,6 @@ Pickup Cars
 =============================== --}}
   @include('components.pickup')
 
-    {{-- Feature List --}}
-
-  @include('components.feature')
-
-
-{{-- ===============================
-Reason Section
-=============================== --}}
-  @include('components.reason')
-
-
-{{-- ===============================
-Campaign Banner
-=============================== --}}
-  @include('components.campaign')
-
 
 {{-- ===============================
 Reviews
@@ -40,6 +24,18 @@ Reviews
 Car Results
 =============================== --}}
   @include('components.results')
+
+  
+{{-- ===============================
+Reason Section
+=============================== --}}
+  @include('components.reason')
+
+
+{{-- ===============================
+Campaign Banner
+=============================== --}}
+  @include('components.campaign')
 
 
 {{-- ===============================

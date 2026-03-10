@@ -1,7 +1,9 @@
 <section id="reviews" class="content-section">
   <div class="container">
     <div class="section-header">
-      <h2>お客様の口コミ</h2>
+      <h2>
+        <a href="{{ route('reviews') }}">お客様の口コミ</a>
+      </h2>
     </div>
     <div class="review-list">
       @foreach ($reviews as $rv)
