@@ -25,11 +25,14 @@
   </main>
 
   <footer class="footer">
+
     <div class="container footer-grid">
+
       <div>
         <div class="footer-title">LOGO</div>
         <p class="muted">フッター説明。</p>
       </div>
+
       <div>
         <div class="footer-head">メニュー</div>
         <ul class="footer-links">
@@ -38,9 +41,13 @@
           <li><a href="#faq">FAQ</a></li>
         </ul>
       </div>
+
+    </div>
+
     <div class="container footer-bottom">
       <small>© {{ date('Y') }} Laravel Learning</small>
     </div>
+
   </footer>
 </body>
 </html>

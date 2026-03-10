@@ -1,103 +1,58 @@
 /* ===============================
-Header Layout
+Topbar Header
 =============================== */
 
-.site-header{
+.topbar{
   position:sticky;
   top:0;
   z-index:100;
   background:#ffffff;
   border-bottom:1px solid var(--border);
-  backdrop-filter:saturate(180%) blur(6px);
 }
 
-.site-header__inner{
+/* inner */
+
+.topbar-inner{
   display:flex;
   align-items:center;
   justify-content:space-between;
-  padding:14px 0;
+  padding:12px 0;
 }
 
-/* ===============================
-Logo
-=============================== */
+/* logo */
 
-.site-logo{
+.logo{
   font-size:20px;
   font-weight:900;
   letter-spacing:.5px;
   color:var(--primary);
 }
 
-/* ===============================
-Navigation
-=============================== */
+/* meta info */
 
-.site-nav{
-  display:flex;
-  gap:20px;
-  align-items:center;
-}
-
-.site-nav a{
-  font-size:14px;
-  font-weight:600;
-  color:var(--text);
-  transition:.15s;
-}
-
-.site-nav a:hover{
-  color:var(--primary);
-}
-
-/* ===============================
-Header Meta
-=============================== */
-
-.site-meta{
+.top-meta{
+  text-align:right;
   font-size:12px;
   color:var(--text-muted);
-  text-align:right;
+}
+
+.meta-line{
+  line-height:1.4;
 }
 
 /* ===============================
-CTA Button
+Responsive
 =============================== */
 
-.header-cta{
-  background:var(--primary);
-  color:#fff;
-  padding:8px 14px;
-  border-radius:8px;
-  font-size:13px;
-  font-weight:700;
-  transition:.15s;
-}
+@media(max-width:700px){
 
-.header-cta:hover{
-  background:var(--primary-dark);
-}
-
-/* ===============================
-Mobile
-=============================== */
-
-@media(max-width:900px){
-
-  .site-header__inner{
-    flex-wrap:wrap;
-    gap:10px;
+  .topbar-inner{
+    flex-direction:column;
+    gap:6px;
   }
 
-  .site-nav{
-    width:100%;
-    justify-content:center;
-    gap:14px;
-    font-size:13px;
-  }
-
-  .site-meta{
-    display:none;
+  .top-meta{
+    text-align:center;
   }
 
 }

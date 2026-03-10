@@ -1,102 +1,85 @@
 /* ===============================
-Footer Base
+Footer
 =============================== */
 
-.site-footer{
+.footer{
+  margin-top:60px;
   background:#0b1b3a;
   color:#e8eefc;
-  margin-top:60px;
 }
 
-.site-footer a{
-  color:#d9e4ff;
-  transition:.15s;
-}
+/* grid */
 
-.site-footer a:hover{
-  color:#ffffff;
-  text-decoration:underline;
-}
-
-/* ===============================
-Footer Grid
-=============================== */
-
-.site-footer__grid{
+.footer-grid{
   display:grid;
-  grid-template-columns:1.2fr 1fr 1fr;
+  grid-template-columns:1.2fr 1fr;
   gap:28px;
-  padding:40px 0;
+  padding:36px 0;
 }
 
-/* ===============================
-Footer Brand
-=============================== */
+/* title */
 
-.site-footer__title{
+.footer-title{
   font-size:20px;
   font-weight:900;
   margin-bottom:10px;
 }
 
-.site-footer__description{
-  font-size:14px;
-  color:#c9d6f4;
-  line-height:1.7;
-}
+/* heading */
 
-/* ===============================
-Footer Navigation
-=============================== */
-
-.site-footer__heading{
-  font-size:14px;
+.footer-head{
   font-weight:800;
   margin-bottom:10px;
-  color:#ffffff;
 }
 
-.site-footer__links{
+/* text */
+
+.muted{
+  color:#c9d6f4;
+  font-size:14px;
+}
+
+/* links */
+
+.footer-links{
   list-style:none;
   padding:0;
   margin:0;
 }
 
-.site-footer__links li{
+.footer-links li{
   margin-bottom:8px;
 }
 
-.site-footer__links a{
-  font-size:14px;
+.footer-links a{
   color:#d6e2ff;
+  font-size:14px;
 }
 
-/* ===============================
-Footer Bottom
-=============================== */
+.footer-links a:hover{
+  text-decoration:underline;
+  color:#ffffff;
+}
 
-.site-footer__bottom{
-  border-top:1px solid rgba(232,238,252,.15);
-  padding:16px 0;
-  font-size:13px;
+/* bottom */
+
+.footer-bottom{
+  border-top:1px solid rgba(255,255,255,.15);
+  padding:14px 0 20px;
   text-align:center;
+  font-size:13px;
   color:#c9d6f4;
 }
 
 /* ===============================
-Mobile
+Responsive
 =============================== */
 
-@media(max-width:900px){
+@media(max-width:800px){
 
-  .site-footer__grid{
+  .footer-grid{
     grid-template-columns:1fr;
-    gap:22px;
-    padding:32px 0;
-  }
-
-  .site-footer__title{
-    font-size:18px;
+    gap:20px;
   }
 
 }
