@@ -14,14 +14,13 @@ class ResultController extends Controller
         $images = ImageData::all();
 
         // データ取得（Modelから）
-        $pickupCars = Car::withImages($images);
+        $resultCars = Car::withImages($images);
         $reviews    = Review::all();
-        $featuredCars = array_slice($pickupCars, 0, 3);
     
         return view('main.result', [
             'title'       => 'Welcome',
             'images'      => $images,
-            'featuredCars'  => $featuredCars,
+            'resultCars'  => $resultCars,
             'reviews'     => $reviews,
         ]);
     }

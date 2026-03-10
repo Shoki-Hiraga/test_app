@@ -7,7 +7,6 @@ use App\Models\Car;
 use App\Models\Reason;
 use App\Models\Step;
 use App\Models\Review;
-use App\Models\Faq;
 
 class WelcomeController extends Controller
 {
@@ -17,15 +16,15 @@ class WelcomeController extends Controller
         $images = ImageData::all();
 
         // データ取得（Modelから）
-        $pickupCars = Car::withImages($images);
+        $resultCars = Car::withImages($images);
         $reviews    = Review::all();
-        $featuredCars = array_slice($pickupCars, 0, 3);
+        $pickupCars = array_slice($resultCars, 0, 3);
     
         return view('welcome.welcome', [
             'title'       => 'Welcome',
             'images'      => $images,
+            'resultCars'  => $resultCars,
             'pickupCars'  => $pickupCars,
-            'featuredCars'  => $featuredCars,
             'reviews'     => $reviews,
         ]);
     }

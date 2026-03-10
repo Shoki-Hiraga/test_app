@@ -7,7 +7,7 @@
     </div>
 
     <div class="car-card-list">
-      @foreach ($featuredCars as $car)
+      @foreach ($resultCars as $car)
       <article class="car-card">
         <div class="car-card__image">
           <img src="{{ asset($car['img']) }}" alt="{{ $car['name'] }}">
