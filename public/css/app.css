@@ -472,3 +472,20 @@ FAQ
 .faq-answer{
   padding-top:10px;
 }
+
+h2 a {
+    color: #007bff;
+    text-decoration: none;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+h2 a:hover {
+    color: #0056b3;
+    text-decoration: underline;
+}
+
+h2 a::after {
+    content: " →";
+    font-size: 0.9em;
+}

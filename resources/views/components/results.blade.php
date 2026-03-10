@@ -1,7 +1,9 @@
 <section class="content-section content-section--soft">
   <div class="container">
     <div class="section-header">
-      <h2>買取実績 / 事例</h2>
+      <h2>
+          <a href="{{ route('results') }}">買取実績 / 事例</a>
+      </h2>
     </div>
 
     <div class="car-card-list">
