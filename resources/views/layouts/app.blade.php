@@ -12,7 +12,9 @@
 <body>
   <header class="topbar">
     <div class="container topbar-inner">
-      <div class="logo">LOGO</div>
+      <div class="logo">
+        <a href="{{ route('welcome') }}">LOGO</a>
+      </div>
       <div class="top-meta">
         <div class="meta-line">受付時間: 9:00 - 18:00</div>
         <div class="meta-line">TEL: 000-0000-0000</div>
@@ -29,8 +31,9 @@
     <div class="container footer-grid">
 
       <div>
-        <div class="footer-title">LOGO</div>
-        <p class="muted">フッター説明。</p>
+        <div class="footer-title">
+          <a href="{{ route('welcome') }}">LOGO</a>
+        </div>
       </div>
 
       <div>
